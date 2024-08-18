@@ -1,0 +1,30 @@
+{
+  "name": "mini-chalk",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "mini-chalk",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development rollup -c -w",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "bumppTag": "bumpp -t tag-release-V"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "api",
+    "msun"
+  ],
+  "author": "JacksonGao188",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "bumpp": "^9.4.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "rollup": "^4.20.0"
+  }
+}

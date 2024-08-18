@@ -1,0 +1,45 @@
+{
+  "name": "vue-template-tag",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "vue模版标签插入自定义的tag/移除tag的cli脚本工具",
+  "bin": {
+    "vue-template-tag": "dist/cli.js"
+  },
+  "scripts": {
+    "bumppTag": "bumpp -t tag-release-V",
+    "build": "rollup -c",
+    "insertTag": "node dist/cli.js -i -d test",
+    "removeTag": "node dist/cli.js -r -d test",
+    "testTag": "node dist/cli.js -t -d test",
+    "testV": "node dist/cli.js -v",
+    "testH": "node dist/cli.js --help"
+  },
+  "files": [
+    "dist/cli.js"
+  ],
+  "keywords": [
+    "vue",
+    "template",
+    "cli",
+    "script"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "JacksonGao188",
+  "license": "MIT",
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.4.27",
+    "chalk": "5.3.0",
+    "cross-spawn": "^7.0.3",
+    "meow": "^13.2.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "bumpp": "^9.4.1"
+  }
+}
