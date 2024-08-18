@@ -1,7 +1,7 @@
 /**
  * 设置文本颜色
 */
-export const colorMap = {
+export const color = {
   black: '\x1b[30m', // 黑色
   red: '\x1b[31m', // 红色
   green: '\x1b[32m', // 绿色
@@ -24,7 +24,7 @@ export const colorMap = {
 /**
  * 设置文本背景色
 */
-export const bgColorMap = {
+export const bgColor = {
   black: '\x1b[40m', // 黑色
   red: '\x1b[41m', // 红色
   green: '\x1b[42m', // 绿色
@@ -47,8 +47,7 @@ export const bgColorMap = {
 /**
  * 设置文本样式
 */
-export const ctyleMap = {
-  resetAllStyle: '\x1b[0m', // 重置所有样式，记得要放在最后面才有效果
+export const style = {
   bold: '\x1b[1m', // 粗体/高亮（Bold/Bright）
   dim: '\x1b[2m', // 淡色/暗淡（Dim/Faint）
   italics: '\x1b[3m', // 斜体（Italic）（有些终端不支持）
@@ -59,15 +58,9 @@ export const ctyleMap = {
   strikethrough: '\x1b[9m' // 删除线（Strikethrough）（有些终端不支持）
 }
 
-export const miniChalk = (text, options = [], isNeedReset) => {
+const simpleAnsi = (text, options = []) => {
   options = options.join('')
-  const reset = isNeedReset ? '\x1b[0m' : ''
-  return `${options}${text}${reset}`
+  return `${options}${text}`
 }
 
-/**
- * https://zh.wikipedia.org/wiki/ANSI%E8%BD%AC%E4%B9%89%E5%BA%8F%E5%88%97
- *
- *  256色使用方法
-*/
-// miniChalk('Msun-Code-Pack', ['\x1b[38;5;34m', '\x1b[48;5;255m'])
+export default simpleAnsi
