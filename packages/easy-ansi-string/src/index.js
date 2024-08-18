@@ -47,9 +47,9 @@ export const style = {
   strikethrough: '\x1b[9m'
 }
 
-const simpleAnsi = (text, options = []) => {
+const easyAnsiString = (text, options = []) => {
   options = options.join('')
   return `${options}${text}`
 }
 
-export default simpleAnsi
+export default easyAnsiString

@@ -8,6 +8,28 @@ importers:
 
   .: {}
 
+  packages/easy-ansi:
+    dependencies:
+      chalk:
+        specifier: 5.3.0
+        version: 5.3.0
+    devDependencies:
+      '@rollup/plugin-alias':
+        specifier: ^5.1.0
+        version: 5.1.0(rollup@4.20.0)
+      '@rollup/plugin-babel':
+        specifier: ^6.0.4
+        version: 6.0.4(@babel/core@7.25.2)(rollup@4.20.0)
+      '@rollup/plugin-node-resolve':
+        specifier: ^15.2.3
+        version: 15.2.3(rollup@4.20.0)
+      bumpp:
+        specifier: ^9.4.2
+        version: 9.5.1
+      rollup:
+        specifier: ^4.20.0
+        version: 4.20.0
+
   packages/mini-chalk:
     dependencies:
       chalk:

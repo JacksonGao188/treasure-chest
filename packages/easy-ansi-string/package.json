@@ -1,34 +1,34 @@
 {
-  "name": "simple-ansi",
+  "name": "easy-ansi-string",
   "type": "module",
   "version": "1.0.0",
-  "description": "simple-ansi",
+  "description": "Terminal simple string style definition",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development rollup -c -w",
-    "build": "cross-env NODE_ENV=production rollup -c",
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
     "bumppTag": "bumpp -t tag-release-V"
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "keywords": [
-    "simple",
+    "easy",
     "ansi",
-    "node"
+    "string",
+    "terminal",
+    "simple",
+    "string",
+    "style",
+    "definition"
   ],
   "files": [
     "dist"
   ],
   "author": "JacksonGao188",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-alias": "^5.1.0",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "bumpp": "^9.4.2",
-    "cross-env": "^7.0.3",
-    "dotenv": "^16.4.5",
     "rollup": "^4.20.0"
   },
   "dependencies": {
