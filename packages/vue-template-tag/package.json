@@ -2,7 +2,7 @@
   "name": "vue-template-tag",
   "type": "module",
   "version": "1.0.0",
-  "description": "vue模版标签插入自定义的tag/移除tag的cli脚本工具",
+  "description": "Custom cli script tool for inserting and removing tags in vue template tags",
   "bin": {
     "vue-template-tag": "dist/cli.js"
   },
@@ -21,18 +21,15 @@
   "keywords": [
     "vue",
     "template",
-    "cli",
-    "script"
+    "tag",
+    "script",
+    "cli"
   ],
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "author": "JacksonGao188",
   "license": "MIT",
   "dependencies": {
     "@vue/compiler-sfc": "^3.4.27",
     "chalk": "5.3.0",
-    "cross-spawn": "^7.0.3",
     "meow": "^13.2.0",
     "uuid": "^10.0.0"
   },

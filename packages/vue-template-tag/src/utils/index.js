@@ -39,7 +39,7 @@ const getCwdPath = () => fs.realpathSync(process.cwd());
 /**
  * 说明文档地址
 */
-const illustrateDocumentAddress = 'https://alidocs.dingtalk.com/i/nodes/ydxXB52LJq7lM0ELFwKQjl7yWqjMp697'
+const illustrateDocumentAddress = '暂无'
 
 /**
  * 将 attributes 字符串解析成对象
