@@ -17,6 +17,9 @@
     "ansi",
     "node"
   ],
+  "files": [
+    "dist"
+  ],
   "author": "JacksonGao188",
   "license": "ISC",
   "devDependencies": {
