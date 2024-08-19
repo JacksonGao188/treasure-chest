@@ -30,8 +30,5 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "bumpp": "^9.4.2",
     "rollup": "^4.20.0"
-  },
-  "dependencies": {
-    "chalk": "5.3.0"
   }
 }
