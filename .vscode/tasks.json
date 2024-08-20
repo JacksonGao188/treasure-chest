@@ -2,9 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "client",
+      "label": "easy-chalk",
       "type": "shell",
-      "command": ". $NVM_DIR/nvm.sh && pnpm dev:client",
+      "command": ". $NVM_DIR/nvm.sh && pnpm dev:easy-chalk",
       "options": {
         "cwd": "${workspaceFolder}"
       },
@@ -12,9 +12,9 @@
       "isBackground": false
     },
     {
-      "label": "server",
+      "label": "vue-template-tag",
       "type": "shell",
-      "command": ". $NVM_DIR/nvm.sh && pnpm dev:server",
+      "command": ". $NVM_DIR/nvm.sh && pnpm dev:vue-template-tag",
       "options": {
         "cwd": "${workspaceFolder}"
       },
@@ -22,10 +22,10 @@
       "isBackground": false
     },
     {
-      "label": "一键启动所有【记账本】子项目",
+      "label": "一键启动所有子项目",
       "dependsOn": [
-        "client",
-        "server",
+        "easy-chalk",
+        "vue-template-tag",
       ],
       "problemMatcher": []
     }

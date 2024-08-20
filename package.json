@@ -1,12 +1,13 @@
 {
   "name": "treasure-chest",
   "version": "1.0.0",
-  "description": "",
+  "description": "My treasure chest",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:easy-chalk": "pnpm --filter easy-chalk dev",
+    "dev:vue-template-tag": "pnpm --filter vue-template-tag dev"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
