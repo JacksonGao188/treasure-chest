@@ -43,13 +43,14 @@ export const style = {
   underline: '\x1b[4m',
   blink: '\x1b[5m',
   reverse: '\x1b[7m',
+  strikethrough: '\x1b[9m',
   hidden: '\x1b[8m',
-  strikethrough: '\x1b[9m'
 }
 
-const easyAnsiString = (text, options = []) => {
+const easyChalk = (text, options = []) => {
+  const reset = '\x1b[0m';
   options = options.join('')
-  return `${options}${text}`
+  return `${options}${text}${reset}`
 }
 
-export default easyAnsiString
+export default easyChalk

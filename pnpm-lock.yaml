@@ -8,11 +8,7 @@ importers:
 
   .: {}
 
-  packages/easy-ansi:
-    dependencies:
-      chalk:
-        specifier: 5.3.0
-        version: 5.3.0
+  packages/easy-chalk:
     devDependencies:
       '@rollup/plugin-alias':
         specifier: ^5.1.0
@@ -30,51 +26,11 @@ importers:
         specifier: ^4.20.0
         version: 4.20.0
 
-  packages/easy-ansi-string:
-    devDependencies:
-      '@rollup/plugin-alias':
-        specifier: ^5.1.0
-        version: 5.1.0(rollup@4.20.0)
-      '@rollup/plugin-babel':
-        specifier: ^6.0.4
-        version: 6.0.4(@babel/core@7.25.2)(rollup@4.20.0)
-      '@rollup/plugin-node-resolve':
-        specifier: ^15.2.3
-        version: 15.2.3(rollup@4.20.0)
-      bumpp:
-        specifier: ^9.4.2
-        version: 9.5.1
-      rollup:
-        specifier: ^4.20.0
-        version: 4.20.0
-
-  packages/mini-chalk:
+  packages/test:
     dependencies:
-      chalk:
-        specifier: 5.3.0
-        version: 5.3.0
-    devDependencies:
-      '@rollup/plugin-alias':
-        specifier: ^5.1.0
-        version: 5.1.0(rollup@4.20.0)
-      '@rollup/plugin-babel':
-        specifier: ^6.0.4
-        version: 6.0.4(@babel/core@7.25.2)(rollup@4.20.0)
-      '@rollup/plugin-node-resolve':
-        specifier: ^15.2.3
-        version: 15.2.3(rollup@4.20.0)
-      bumpp:
-        specifier: ^9.4.2
-        version: 9.5.1
-      cross-env:
-        specifier: ^7.0.3
-        version: 7.0.3
-      dotenv:
-        specifier: ^16.4.5
-        version: 16.4.5
-      rollup:
-        specifier: ^4.20.0
-        version: 4.20.0
+      easy-chalk:
+        specifier: workspace:*
+        version: link:../easy-chalk
 
   packages/vue-template-tag:
     dependencies:
@@ -455,11 +411,6 @@ packages:
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
-
-  cross-env@7.0.3:
-    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
-    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
-    hasBin: true
 
   cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
@@ -1229,10 +1180,6 @@ snapshots:
   consola@3.2.3: {}
 
   convert-source-map@2.0.0: {}
-
-  cross-env@7.0.3:
-    dependencies:
-      cross-spawn: 7.0.3
 
   cross-spawn@7.0.3:
     dependencies:

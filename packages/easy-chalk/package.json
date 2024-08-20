@@ -1,8 +1,8 @@
 {
-  "name": "easy-ansi-string",
+  "name": "easy-chalk",
   "type": "module",
   "version": "1.0.0",
-  "description": "Terminal simple string style definition",
+  "description": "Terminal easy string style definition",
   "main": "dist/index.js",
   "scripts": {
     "dev": "rollup -c -w",
@@ -11,10 +11,8 @@
   },
   "keywords": [
     "easy",
-    "ansi",
-    "string",
+    "chalk",
     "terminal",
-    "simple",
     "string",
     "style",
     "definition"
