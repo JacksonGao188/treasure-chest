@@ -1,17 +1,8 @@
 
 <h1 align="center">
-	<p style="text-align: center;font-size: 4rem;">
-    <span style="color: black">e</span>
-    <span style="color: green">a</span>
-    <span style="color: black">s</span>
-    <span style="color: blue">y</span>
-    <span style="color: yellow">-</span>
-    <span style="color: magenta">c</span>
-    <span style="color: cyan">h</span>
-    <span style="color: black">a</span>
-    <span style="color: red">l</span>
-    <span style="color: black">k</span>
-  </p>
+	<br>
+    <img width="388" src="assets/easy-chalk.png" alt="Chalk">
+  </br>
 </h1>
 
 ![](assets/effect.jpg)
