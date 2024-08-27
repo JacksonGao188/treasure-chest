@@ -1,7 +1,7 @@
 {
   "name": "easy-chalk",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Terminal easy string style definition",
   "main": "dist/index.js",
   "scripts": {

@@ -1,11 +1,11 @@
 
 <h1 align="center">
 	<br>
-    <img width="388" src="assets/easy-chalk.png" alt="Chalk">
+    <img width="388" src="https://github.com/JacksonGao188/treasure-chest/blob/e2d016ad6edb0fdba9740b9114c5564ba64d2fd8/packages/easy-chalk/assets/easy-chalk.png" alt="Chalk">
   </br>
 </h1>
 
-![](assets/effect.jpg)
+![](https://github.com/JacksonGao188/treasure-chest/blob/e2d016ad6edb0fdba9740b9114c5564ba64d2fd8/packages/easy-chalk/assets/effect.jpg)
 
 ## 说明（Illustrate） 
 - 欢迎使用终端简单字符串样式定义工具方法 easy-chalk （Welcome to the terminal easy string style definition tool method easy-chalk）
