@@ -1,6 +1,6 @@
 {
   "name": "beauty-html-log",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "beauty-html-log",
   "main": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
@@ -39,5 +39,9 @@
   },
   "peerDependencies": {
     "dayjs": "^1.11.10"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/JacksonGao188/treasure-chest/tree/main/packages/beauty-html-log"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "vue-template-tag",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom cli script tool for inserting and removing tags in vue template tags",
   "bin": {
     "vue-template-tag": "dist/cli.js"
@@ -38,5 +38,9 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "bumpp": "^9.4.1"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/JacksonGao188/treasure-chest/tree/main/packages/vue-template-tag"
   }
 }

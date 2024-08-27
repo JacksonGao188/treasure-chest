@@ -1,7 +1,7 @@
 {
   "name": "easy-chalk",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Terminal easy string style definition",
   "main": "dist/index.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "rollup": "^4.20.0"
   },
   "repository": {
-    "type": "gitee",
-    "url": "https://gitee.com/JacksonGao/treasure-chest/tree/main/packages/easy-chalk"
+    "type": "github",
+    "url": "https://github.com/JacksonGao188/treasure-chest/tree/main/packages/easy-chalk"
   }
 }
