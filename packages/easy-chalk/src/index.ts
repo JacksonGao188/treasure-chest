@@ -1,4 +1,6 @@
-export const color = {
+import { ColorType, BgColorType, StyleType, EasyChalkTextType, EasyChalkOptionsType } from '@/type'
+
+export const color: ColorType = {
   black: '\x1b[30m',
   red: '\x1b[31m',
   green: '\x1b[32m',
@@ -17,7 +19,7 @@ export const color = {
   brightWhite: '\x1b[97m'
 }
 
-export const bgColor = {
+export const bgColor: BgColorType = {
   black: '\x1b[40m',
   red: '\x1b[41m',
   green: '\x1b[42m',
@@ -36,7 +38,7 @@ export const bgColor = {
   brightWhite: '\x1b[107m'
 }
 
-export const style = {
+export const style: StyleType = {
   bold: '\x1b[1m',
   dim: '\x1b[2m',
   italics: '\x1b[3m',
@@ -47,10 +49,10 @@ export const style = {
   hidden: '\x1b[8m',
 }
 
-const easyChalk = (text, options = []) => {
+const easyChalk = (text: EasyChalkTextType, options: EasyChalkOptionsType = []): string => {
   const reset = '\x1b[0m';
-  options = options.join('')
-  return `${options}${text}${reset}`
+  const optionsStr = options.join('')
+  return `${optionsStr}${text}${reset}`
 }
 
 export default easyChalk

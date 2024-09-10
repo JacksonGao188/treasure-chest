@@ -5,10 +5,9 @@
   "main": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
   "author": "JacksonGao188",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "clean:dist": "rimraf dist",
-    "rollup:build": "rm -fr dist && pnpm rollup -c",
     "dev": "rollup -c -w --bundleConfigAsCjs",
     "build:types": "pnpm clean:dist && tsc -b ./tsconfig.types.json",
     "build": "pnpm build:types && rollup -c --bundleConfigAsCjs",

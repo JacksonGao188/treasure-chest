@@ -1,12 +1,14 @@
-import resolve from "@rollup/plugin-node-resolve";
-import { createRequire } from "module";
-import { babel } from "@rollup/plugin-babel";
+import path from 'path'
+import resolve from '@rollup/plugin-node-resolve'
+import commonjs from '@rollup/plugin-commonjs'
+import rollupTypescript from 'rollup-plugin-typescript2'
+import babel from '@rollup/plugin-babel'
+import { DEFAULT_EXTENSIONS } from '@babel/core'
 import alias from "@rollup/plugin-alias";
-import path from "path";
-import { fileURLToPath } from "url";
+import { terser } from 'rollup-plugin-terser'
+import pkg from './package.json'
 
-const require = createRequire(import.meta.url);
-const pkg = require("./package.json");
+const env = process.env.NODE_ENV
 
 const getExternal = () => {
   return [
@@ -15,17 +17,17 @@ const getExternal = () => {
   ];
 }
 
-let __dirname = fileURLToPath(new URL(".", import.meta.url));
-
-export default {
-  input: "src/index.js",
+const config = {
+  input: path.resolve(__dirname, 'src/index.ts'),
   output: {
-    file: "dist/index.js",
+    file: pkg.main,
     format: "esm",
-    sourcemap: true,
   },
   external: getExternal(),
   plugins: [
+    resolve(),
+    commonjs(),
+    rollupTypescript(),
     alias({
       entries: [
         {
@@ -36,10 +38,21 @@ export default {
     }),
     babel({
       babelHelpers: "bundled",
-      extensions: [".js", ".jsx", ".es6", ".es", ".mjs"],
+      extensions: [...DEFAULT_EXTENSIONS, '.ts', '.json'],
     }),
-    resolve({
-      extensions: [".mjs", ".js", ".node"],
-    })
-  ],
-};
+  ]
+}
+
+// 若打包正式环境，压缩代码 
+if (env === 'production') {
+  config.plugins.push(terser({
+    compress: {
+      pure_getters: true,
+      unsafe: true,
+      unsafe_comps: true,
+      warnings: false
+    }
+  }))
+}
+
+export default config

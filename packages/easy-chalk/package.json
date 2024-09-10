@@ -1,12 +1,16 @@
 {
   "name": "easy-chalk",
-  "type": "module",
   "version": "1.0.4",
   "description": "Terminal easy string style definition",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "author": "JacksonGao188",
+  "license": "MIT",
   "scripts": {
-    "dev": "rollup -c -w",
-    "build": "rollup -c",
+    "clean:dist": "rimraf dist",
+    "dev": "rollup -c -w --bundleConfigAsCjs",
+    "build:types": "pnpm clean:dist && tsc -b ./tsconfig.types.json",
+    "build": "pnpm build:types && rollup -c --bundleConfigAsCjs",
     "bumppTag": "bumpp -t tag-release-V"
   },
   "keywords": [
@@ -20,14 +24,19 @@
   "files": [
     "dist"
   ],
-  "author": "JacksonGao188",
-  "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
     "@rollup/plugin-alias": "^5.1.0",
     "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "bumpp": "^9.4.2",
-    "rollup": "^4.20.0"
+    "rimraf": "^6.0.1",
+    "rollup": "^4.20.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.5.4"
   },
   "repository": {
     "type": "github",

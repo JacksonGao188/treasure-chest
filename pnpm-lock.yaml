@@ -53,21 +53,42 @@ importers:
 
   packages/easy-chalk:
     devDependencies:
+      '@babel/core':
+        specifier: ^7.25.2
+        version: 7.25.2
+      '@babel/preset-env':
+        specifier: ^7.25.3
+        version: 7.25.3(@babel/core@7.25.2)
       '@rollup/plugin-alias':
         specifier: ^5.1.0
         version: 5.1.0(rollup@4.20.0)
       '@rollup/plugin-babel':
         specifier: ^6.0.4
         version: 6.0.4(@babel/core@7.25.2)(rollup@4.20.0)
+      '@rollup/plugin-commonjs':
+        specifier: ^26.0.1
+        version: 26.0.1(rollup@4.20.0)
       '@rollup/plugin-node-resolve':
         specifier: ^15.2.3
         version: 15.2.3(rollup@4.20.0)
       bumpp:
         specifier: ^9.4.2
         version: 9.5.1
+      rimraf:
+        specifier: ^6.0.1
+        version: 6.0.1
       rollup:
         specifier: ^4.20.0
         version: 4.20.0
+      rollup-plugin-terser:
+        specifier: ^7.0.2
+        version: 7.0.2(rollup@4.20.0)
+      rollup-plugin-typescript2:
+        specifier: ^0.36.0
+        version: 0.36.0(rollup@4.20.0)(typescript@5.5.4)
+      typescript:
+        specifier: ^5.5.4
+        version: 5.5.4
 
   packages/my-vite-ts:
     dependencies:
